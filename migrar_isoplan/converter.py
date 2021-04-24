@@ -5,8 +5,8 @@ from pandas.tseries.offsets import MonthEnd
 class Converter:
 
     def __init__(self):
-        self.origem = "EG-FORM-HUM.000435 - Cronograma de Instrumentos e Equipamentos para Calibração"
-        self.destino = "Planilha_IsoplanV4.2"
+        self.origem = "(omitido)"
+        self.destino = "(omitido)"
         self.sep = ";"
         self.enc = "ISO-8859-1"
         self.df1 = None
@@ -163,7 +163,7 @@ class Converter:
                         na_rep=na)
 
     def ler_criticidade(self):
-        df3 = pd.read_excel("c:\\TABELA_CRITICIDADE.xlsx", engine='openpyxl')
+        df3 = pd.read_excel("(omitido)", engine='openpyxl')
         return df3
 
     def criticidade(self):
